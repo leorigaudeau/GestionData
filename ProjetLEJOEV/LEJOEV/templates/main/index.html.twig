@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+    <div class="personna">
+        <form action="" class="pe-form">
+            <select class="pe-dropbox">
+                <option value="Johan">Johan</option>
+                <option value="Evan">Evan</option>
+                <option value="Léo">léo</option>
+                <option value="Francis">Francis</option>
+            </select>
+            <input class="pe-input" type="submit" value="Analyser">
+        </form>
+    </div>
+    <div class="stat">
+        <div class="st-procirlce">
+            <div class="pr-title">
+                <h2>Score personnel</h2>
+            </div>
+        </div>
+        <div class="st-detailbar">
+            <div class="de-title">
+                <h2>Details Score</h2>
+            </div>
+        </div>
+        <div class="st-scoreclass">
+            <div class="sc-title">
+                <h2>Score Classe</h2>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

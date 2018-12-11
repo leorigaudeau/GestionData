@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/ProjetLEJOEV/vendor/facebook/webdriver" />
+      <path value="$PROJECT_DIR$/ProjetLEJOEV/vendor/composer" />
+      <path value="$PROJECT_DIR$/ProjetLEJOEV/vendor/symfony/process" />
+    </include_path>
+  </component>
+</project>

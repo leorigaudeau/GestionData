@@ -1,0 +1,38 @@
+body{
+    margin:0;
+}
+
+.personna{
+    width: 100vw;
+    border-bottom: black 1px solid;
+}
+.pe-form{
+    padding: 10px;
+}
+
+.pe-dropbox{
+    border: #5eb5e0 1px solid;
+    width: 200px;
+}
+
+.pe-input{
+    background: #5eb5e0;
+    color: white;
+    border: 1px solid #5eb5e0;
+    width: 100px;
+}
+
+stat{
+    display: flex;
+    flex-direction: row;
+}
+
+.sc-title{
+
+}
+.de-title{
+
+}
+.pr-title{
+
+}
