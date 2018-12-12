@@ -1,20 +1,19 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello {{ controller_name }}!{% endblock %}
+{% block title %}{% endblock %}
 
 {% block body %}
 
 <div class="example-wrapper">
     <div class="personna">
-        <form action="/" class="pe-form">
-            <select class="pe-dropbox">
+            <select class="pe-dropbox" id="select">
                 <option value="Johan">Johan</option>
                 <option value="Evan">Evan</option>
                 <option value="Léo">léo</option>
                 <option value="Francis">Francis</option>
             </select>
-            <input class="pe-input" type="submit" value="Analyser">
-        </form>
+            <input class="pe-input" type="submit" value="Analyser" onclick="redirect()">
+
     </div>
     <div class="stat">
         <div class="st-procirlce">
