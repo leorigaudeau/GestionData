@@ -21,17 +21,17 @@ class MainController extends AbstractController
      */
     public function index()
     {
-        return $this->render('main/index.html.twig', [
-            'controller_name' => 'MainController',
-        ]);
+
+        $viewData['utilisateurs']=$this->usersRepo->findAll();
+        return $this->render('main/All.html.twig', $viewData);
     }
 
     /**
-     * @Route("/{name}", name="mainname")
+     * @Route("/{id}", name="mainname")
      */
-    public function indexname($name)
+    public function indexname($id)
     {
-        $viewData['utilisateur']=$this->usersRepo->find($name);
+        $viewData['utilisateur']=$this->usersRepo->find($id);
 
         return $this->render('main/index.html.twig',$viewData);
     }

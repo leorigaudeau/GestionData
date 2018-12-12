@@ -10,9 +10,6 @@ class AppFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
-
-
-
         $user1 = new Utilisateurs();
         $user1->setNom("Vadillo");
         $user1->setPrenom("Matthieu");
@@ -360,6 +357,19 @@ class AppFixtures extends Fixture
         $user29->setComportement(60);
         $user29->setMoyenne(68);
         $manager->persist($user29);
+
+        $user30 = new Utilisateurs();
+        $user30->setNom("XXX");
+        $user30->setPrenom("YYY");
+        $user30->setAge(19);
+        $user30->setMental(100);
+        $user30->setSavoir(100);
+        $user30->setPhysique(100);
+        $user30->setSociabilite(100);
+        $user30->setComportement(100);
+        $user30->setMoyenne(100);
+        $manager->persist($user30);
+
 
 
         $manager->flush();

@@ -6,16 +6,19 @@
 <div class="globale">
     <div class="personna">
             <select class="pe-dropbox" id="select">
-                <option value="Johan">Johan</option>
-                <option value="Evan">Evan</option>
-                <option value="Léo">léo</option>
-                <option value="Francis">Francis</option>
+                <option value="43">Johan</option>
+                <option value="47">Evan</option>
+                <option value="58">léo</option>
+                <option value="49">Francis</option>
             </select>
             <input class="pe-input" type="submit" value="Analyser" onclick="redirect()">
 
     </div>
     <div class="container1">
-        <div class="banania1"></div>
+        <div class="banania1">
+                        <h5 class="card-title">{{ utilisateur.id }}</h5>
+                        <h5 class="card-title">{{ utilisateur.prenom }}</h5>
+        </div>
         <div class="banania2"></div>
         <div class="banania3"></div>
     </div>
