@@ -1,3 +1,6 @@
+
+/*---------------------------------------------------------------------*/
+
 body{
     margin:0;
 }
@@ -20,19 +23,20 @@ body{
 }
 
 .pe-dropbox{
-    border: #5eb5e0 1px solid;
+    border: #93B7F6 1px solid;
     width: 200px;
 }
 
 .pe-input{
-    background: #5eb5e0;
+    background: #93B7F6;
     color: white;
-    border: 1px solid #5eb5e0;
+    border: 1px solid #93B7F6;
     width: 100px;
 }
 .container1{
     display: flex;
     flex-direction: row;
+
     width: 100%;
     height: 95%;
 }

@@ -1,19 +1,18 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello {{ controller_name }}!{% endblock %}
+{% block title %}{% endblock %}
 
 {% block body %}
 <div class="globale">
     <div class="personna">
-        <form action="" class="pe-form">
-            <select class="pe-dropbox">
-                <option value="Johan">Johan</option>
-                <option value="Evan">Evan</option>
-                <option value="Léo">léo</option>
-                <option value="Francis">Francis</option>
+            <select class="pe-dropbox" id="select">
+                <option value="43">Johan</option>
+                <option value="47">Evan</option>
+                <option value="58">léo</option>
+                <option value="49">Francis</option>
             </select>
-            <input class="pe-input" type="submit" value="Analyser">
-        </form>
+            <input class="pe-input" type="submit" value="Analyser" onclick="redirect()">
+
     </div>
     <div class="container1">
         <div class="banania1">
@@ -54,6 +53,8 @@
                 </div>
             </div>
         </div>
+
+
     </div>
 </div>
 {% endblock %}
