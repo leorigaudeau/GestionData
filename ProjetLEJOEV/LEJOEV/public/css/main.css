@@ -1,3 +1,6 @@
+
+/*---------------------------------------------------------------------*/
+
 body{
     margin:0;
 }
@@ -11,22 +14,32 @@ body{
 }
 
 .pe-dropbox{
-    border: #5eb5e0 1px solid;
+    border: #93B7F6 1px solid;
     width: 200px;
 }
 
 .pe-input{
-    background: #5eb5e0;
+    background: #93B7F6;
     color: white;
-    border: 1px solid #5eb5e0;
+    border: 1px solid #93B7F6;
     width: 100px;
 }
 
 stat{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
 }
 
+.st-procirlce{
+    width: 200px;
+}
+.st-detailbar{
+    width: 200px;
+}
+.st-scoreclass{
+    width: 200px;
+}
 .sc-title{
 
 }
