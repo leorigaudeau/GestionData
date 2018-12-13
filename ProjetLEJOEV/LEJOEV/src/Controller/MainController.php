@@ -23,7 +23,7 @@ class MainController extends AbstractController
     {
 
         $viewData['utilisateurs']=$this->usersRepo->findAll();
-        return $this->render('main/All.html.twig', $viewData);
+        return $this->render('main/all.html.twig', $viewData);
     }
 
     /**
@@ -31,6 +31,7 @@ class MainController extends AbstractController
      */
     public function indexname($id)
     {
+        $viewData['utilisateurs']=$this->usersRepo->findAll();
         $viewData['utilisateur']=$this->usersRepo->find($id);
 
         return $this->render('main/index.html.twig',$viewData);

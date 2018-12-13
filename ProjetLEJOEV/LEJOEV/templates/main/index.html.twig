@@ -6,10 +6,9 @@
 <div class="globale">
     <div class="personna">
             <select class="pe-dropbox" id="select">
-                <option value="43">Johan</option>
-                <option value="47">Evan</option>
-                <option value="58">léo</option>
-                <option value="49">Francis</option>
+                {% for user in utilisateurs %}
+                    <option value="{{ user.id }}">{{ user.prenom }}</option>
+                {% endfor %}
             </select>
             <input class="pe-input" type="submit" value="Analyser" onclick="redirect()">
 
