@@ -17,9 +17,9 @@
         <div class="banania1">
             <h2>Score personel</h2>
             <div class="graph1"></div>
-            <p>Nom : RIGEODEAU <br>
-            Prenom : Léeau <br>
-            Age : 12 ans</p>
+            <p>Nom : {{ utilisateur.nom }} <br>
+            Prenom : {{ utilisateur.prenom }} <br>
+            Age : {{ utilisateur.age}} ans</p>
         </div>
         <div class="banania2">
             <h2>Details score</h2>
@@ -32,23 +32,23 @@
             <div class="listecouleur">
                 <div class="listcoulelem">
                     <div class="coul1"></div>
-                    <p class="textcoul">Lorem</p>
+                    <p class="textcoul">{{ utilisateur.mental }}</p>
                 </div>
                 <div class="listcoulelem">
                     <div class="coul2"></div>
-                    <p class="textcoul">Lorem</p>
+                    <p class="textcoul">{{ utilisateur.savoir }}</p>
                 </div>
                 <div class="listcoulelem">
                     <div class="coul3"></div>
-                    <p class="textcoul">Lorem</p>
+                    <p class="textcoul">{{ utilisateur.physique }}</p>
                 </div>
                 <div class="listcoulelem">
                     <div class="coul4"></div>
-                    <p class="textcoul">Lorem</p>
+                    <p class="textcoul">{{ utilisateur.Sociabilite }}</p>
                 </div>
                 <div class="listcoulelem">
                     <div class="coul5"></div>
-                    <p class="textcoul">Lorem</p>
+                    <p class="textcoul">{{ utilisateur.moyenne}}</p>
                 </div>
             </div>
         </div>
