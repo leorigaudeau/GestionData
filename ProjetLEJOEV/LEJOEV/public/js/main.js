@@ -6,7 +6,9 @@ function redirect() {
     urlbase = urlbase.split("/")[0];
     console.log(urlbase)
     document.location.href=urlbase+lien;
-
-
-
 }
+
+
+
+
+

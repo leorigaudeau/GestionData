@@ -11,25 +11,80 @@
                 {% endfor %}
             </select>
             <input class="pe-input" type="submit" value="Analyser" onclick="redirect()">
+            <a href="{{ path('modifieride',{id:utilisateur.id}) }}"><input class="pe-input" value="Admin" ></a>
+
 
     </div>
     <div class="container1">
         <div class="banania1">
             <h2>Score personel</h2>
-            <div class="graph1"></div>
-            <p>Nom : {{ utilisateur.nom }} <br>
+            <div class="graph1">
+                <div class="content-wrap">
+                    <div>
+
+                        <div class="progress-bar position text-center" data-percent="48" data-duration="1000" data-color="#6a6f77,#5fb756"><script>$(".progress-bar").loading()</script></div>
+                    </div>
+                </div>
+
+            </div>
+            <p>
+            <!-- le nom utilisteur rend 0 avec la BDDNom : {{ utilisateur.nom }} <br>-->
             Prenom : {{ utilisateur.prenom }} <br>
             Age : {{ utilisateur.age}} ans</p>
         </div>
         <div class="banania2">
-            <h2>Details score</h2>
-            <div class="graph2"></div>
+            <h2>Détails score</h2>
+            <div class="graph2">
+                <div class="contentbar">
+                    <p class="textBar">Mental</p>
+                    <div class="prgBar" style="height: {{ utilisateur.mental }}%">
+                    </div>
+                    <p class="prcbar">{{ utilisateur.mental }} %</p>
+                </div>
+                <div class="contentbar">
+                    <p class="textBar">Scolaire</p>
+                    <div class="prgBar" style="height: {{ utilisateur.savoir }}%">
+                    </div>
+                    <p class="prcbar">{{ utilisateur.savoir }}%</p>
+                </div>
+                <div class="contentbar">
+                    <p class="textBar">Physique</p>
+                    <div class="prgBar" style="height: {{ utilisateur.physique }}%">
+                    </div>
+                    <p class="prcbar">{{ utilisateur.physique }}%</p>
+                </div>
+                <div class="contentbar">
+                    <p class="textBar">Sociabilité</p>
+                    <div class="prgBar" style="height: {{ utilisateur.Sociabilite }}%">
+                    </div>
+                    <p class="prcbar">{{ utilisateur.Sociabilite }}%</p>
+                </div>
+                <div class="contentbar">
+                    <p class="textBar">Comportement</p>
+                    <div class="prgBar" style="height: {{ utilisateur.comportement }}%">
+                    </div>
+                    <p class="prcbar">{{ utilisateur.comportement }}%</p>
+                </div>
+
+
+
+            </div>
             <button type="button" class="btn">Améliorer votre score !</button>
         </div>
         <div class="banania3">
-            <h2>Score classe</h2>
-            <div class="graph3"></div>
-            <div class="listecouleur">
+            <h2>Classements</h2>
+            <div class="graph3">
+                <ol>
+                    {% for classe in Classement%}
+                        <li>{{ classe.prenom }}</li>
+                    {% endfor %}
+                    <li>...</li>
+
+                </ol>
+
+
+            </div>
+            <<!--div class="listecouleur">
                 <div class="listcoulelem">
                     <div class="coul1"></div>
                     <p class="textcoul">{{ utilisateur.mental }}</p>
@@ -50,7 +105,7 @@
                     <div class="coul5"></div>
                     <p class="textcoul">{{ utilisateur.moyenne}}</p>
                 </div>
-            </div>
+            </div>-->
         </div>
 
 

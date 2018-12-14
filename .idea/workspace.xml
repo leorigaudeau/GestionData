@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="050928b9-2bb7-486e-9fd8-1e3d0b5a7ce5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/main/admin.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/public/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/Controller/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/Repository/UtilisateursRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/Repository/UtilisateursRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/main/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,68 +40,115 @@
     <session id="-124472971">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.25" value="2" />
+          <entry key="project.open.time.25" value="3" />
+          <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="412" />
+          <entry key="css" value="979" />
           <entry key="env" value="28" />
-          <entry key="js" value="231" />
-          <entry key="php" value="775" />
-          <entry key="twig" value="708" />
-          <entry key="yaml" value="5" />
+          <entry key="js" value="254" />
+          <entry key="php" value="1174" />
+          <entry key="twig" value="1441" />
+          <entry key="yaml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="412" />
-          <entry key="JavaScript" value="231" />
-          <entry key="PHP" value="775" />
+          <entry key="CSS" value="979" />
+          <entry key="JavaScript" value="254" />
+          <entry key="PHP" value="1174" />
           <entry key="PLAIN_TEXT" value="28" />
-          <entry key="Twig" value="708" />
-          <entry key="YAML" value="5" />
+          <entry key="Twig" value="1441" />
+          <entry key="YAML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="2" />
+          <entry key="css" value="4" />
           <entry key="env" value="1" />
-          <entry key="js" value="2" />
+          <entry key="js" value="4" />
           <entry key="json" value="2" />
           <entry key="lock" value="2" />
-          <entry key="php" value="12" />
-          <entry key="twig" value="5" />
-          <entry key="yaml" value="3" />
+          <entry key="php" value="16" />
+          <entry key="twig" value="9" />
+          <entry key="yaml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="2" />
+          <entry key="CSS" value="4" />
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="2" />
-          <entry key="PHP" value="12" />
+          <entry key="JavaScript" value="4" />
+          <entry key="PHP" value="16" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Twig" value="5" />
-          <entry key="YAML" value="3" />
+          <entry key="Twig" value="9" />
+          <entry key="YAML" value="4" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/main/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
+            <state relative-caret-position="272">
+              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/Repository/UtilisateursRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="39" column="37" selection-start-line="50" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/config/packages/twig.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/public/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/public/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -101,33 +156,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/Entity/Utilisateurs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="56" column="20" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="20" />
+            <state relative-caret-position="1037">
+              <caret line="61" column="25" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/.env">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/Controller/MainController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="55" />
+            <state relative-caret-position="447">
+              <caret line="38" column="62" lean-forward="true" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="62" />
+              <folding>
+                <element signature="e#34#62#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/config/packages/doctrine.yaml">
+        <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/main/admin.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="23" />
+            <state relative-caret-position="153">
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/composer.lock">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/main/all.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" selection-end-line="31" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -140,25 +202,38 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>btn</find>
+      <find>contentbar</find>
+      <find>bac</find>
+      <find>.bar{</find>
+      <find>progress</find>
+      <find>barOverflow</find>
+      <find>pe-in</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/base.html.twig" />
-        <option value="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/public/css/main.css" />
-        <option value="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/Repository/UtilisateursRepository.php" />
-        <option value="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/DataFixtures/AppFixtures.php" />
-        <option value="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/public/js/main.js" />
         <option value="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/main/all.html.twig" />
-        <option value="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/Controller/MainController.php" />
         <option value="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/.env" />
         <option value="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/config/packages/doctrine.yaml" />
+        <option value="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/DataFixtures/AppFixtures.php" />
+        <option value="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/Repository/UtilisateursRepository.php" />
+        <option value="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/public/js/main.js" />
+        <option value="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/public/css/main.css" />
         <option value="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/main/index.html.twig" />
+        <option value="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/config/packages/twig.yaml" />
+        <option value="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/Controller/MainController.php" />
+        <option value="$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/main/admin.html.twig" />
       </list>
     </option>
   </component>
@@ -175,8 +250,8 @@
       <path value="$PROJECT_DIR$/ProjetLEJOEV/vendor/symfony/process" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -210,6 +285,14 @@
               <item name="ProjetLEJOEV" type="462c0819:PsiDirectoryNode" />
               <item name="LEJOEV" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GestionData" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GestionData" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjetLEJOEV" type="462c0819:PsiDirectoryNode" />
+              <item name="LEJOEV" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GestionData" type="b2602c69:ProjectViewProjectNode" />
@@ -344,21 +427,23 @@
       <workItem from="1544558575680" duration="6909000" />
       <workItem from="1544602644270" duration="11204000" />
       <workItem from="1544698613700" duration="457000" />
-      <workItem from="1544730173566" duration="4107000" />
+      <workItem from="1544730173566" duration="7028000" />
+      <workItem from="1544737949453" duration="6169000" />
+      <workItem from="1544771855742" duration="524000" />
+      <workItem from="1544779862882" duration="2897000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28165000" />
+    <option name="totallyTimeSpent" value="40676000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29102844" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14818764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Command Line Tools Console" visible="true" weight="0.32932165" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -371,13 +456,14 @@
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="12" visible="true" weight="0.32932165" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.6619256" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16364606" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14498934" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -388,14 +474,15 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32932165" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="12" visible="true" weight="0.32932165" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.6619256" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,58 +497,6 @@
         <state relative-caret-position="-182" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/Repository/UtilisateursRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/main/all.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/Controller/MainController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#34#76#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/DataFixtures/AppFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6239">
-          <caret line="370" column="33" selection-start-line="370" selection-start-column="33" selection-end-line="370" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/Migrations/Version20181212102408.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -470,9 +505,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/composer.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/composer.lock">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/composer.lock">
@@ -504,17 +536,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/composer.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/DataFixtures/AppFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6052">
+          <caret line="359" selection-start-line="359" selection-end-line="359" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/Entity/Utilisateurs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="20" />
+        <state relative-caret-position="1037">
+          <caret line="61" column="25" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/main/all.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/config/packages/twig.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/main/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
+        <state relative-caret-position="272">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/templates/main/admin.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/Repository/UtilisateursRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="39" column="37" selection-start-line="50" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetLEJOEV/LEJOEV/src/Controller/MainController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="38" column="62" lean-forward="true" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="62" />
+          <folding>
+            <element signature="e#34#62#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

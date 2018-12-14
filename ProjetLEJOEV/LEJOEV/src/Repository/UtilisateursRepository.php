@@ -47,4 +47,15 @@ class UtilisateursRepository extends ServiceEntityRepository
         ;
     }
     */
+
+    public function findAllOrderedByMoyenne()
+    {
+        return $this->createQueryBuilder('u')
+            ->orderBy('u.moyenne','DESC')
+            ->setMaxResults(10)
+            ->getQuery()
+            ->getResult();
+    }
+
+
 }

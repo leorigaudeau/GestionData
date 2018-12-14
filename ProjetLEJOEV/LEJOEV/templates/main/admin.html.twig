@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+    <div class="globale">
+
+        {{ form_start(formLivreur)}}
+
+        {{ form_row(formLivreur.prenom , {'attr':{'placeholder': 'Nom du livreur' }}) }}
+
+
+        <button type="submit" class="btn-success">Modifier un livreur</button>
+
+        {{form_end(formLivreur)}}
+    </div>
+{% endblock %}
