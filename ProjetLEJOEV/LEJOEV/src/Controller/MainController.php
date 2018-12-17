@@ -3,8 +3,11 @@
 namespace App\Controller;
 
 use App\Entity\Utilisateurs;
+use App\Repository\QuestionsRepository;
 use App\Repository\UtilisateursRepository;
 use Doctrine\Common\Persistence\ObjectManager;
+use phpDocumentor\Reflection\Types\Integer;
+use ProxyManager\ProxyGenerator\AccessInterceptorScopeLocalizer\MethodGenerator\BindProxyProperties;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\HttpFoundation\Request;
@@ -14,10 +17,13 @@ class MainController extends AbstractController
 {
     public  $viewData =[];
     private  $usersRepo;
+    private $questionRepo;
 
-    public function __construct(UtilisateursRepository $usersRepo)
+
+    public function __construct(UtilisateursRepository $usersRepo, QuestionsRepository $questionRepo)
     {
         $this->usersRepo =$usersRepo;
+        $this->questionRepo=$questionRepo;
 
     }
     /**
@@ -27,11 +33,11 @@ class MainController extends AbstractController
     {
 
         $viewData['utilisateurs']=$this->usersRepo->findAll();
-        return $this->render('main/all.html.twig', $viewData);
+        return $this->render('main/accueil.html.twig', $viewData);
     }
 
     /**
-     * @Route("/{id}", name="mainname")
+     * @Route("/analyse/{id}", name="mainname")
      */
     public function indexname($id)
     {
@@ -43,25 +49,43 @@ class MainController extends AbstractController
     }
 
     /**
+     * @Route("/question/{id}", name="questionById")
+     *
+     */
+    public function questionById($id)
+
+    {
+        $randNumber = rand(16, 30);
+        $viewData['Questions'] = $this->questionRepo->findRandom($randNumber);
+
+
+
+
+
+        return $this->render('main/questions.html.twig',$viewData);
+    }
+
+    /**
      * @Route("/administration/modifier/{id}", name="modifieride")
      *
      */
-    public function modifierID(Utilisateurs $livreur,Request $request,ObjectManager $manager)
+    public function modifierID(Utilisateurs $id,Request $request,ObjectManager $manager)
 
     {
-        $formLivreur = $this ->createFormBuilder($livreur)
+        $formUsers = $this ->createFormBuilder($id)
             ->add('prenom')
+            ->add('age')
             ->getForm();
 
-        $formLivreur->handleRequest($request);
+        $formUsers->handleRequest($request);
 
-        if($formLivreur->isSubmitted()&& $formLivreur->isValid()){
-            $manager->persist($livreur);
+        if($formUsers->isSubmitted()&& $formUsers->isValid()){
+            $manager->persist($id);
             $manager->flush();
 
             return $this->redirectToRoute('main');
         }
 
-        return $this->render('main/admin.html.twig',['formLivreur' =>$formLivreur->createView()]);
+        return $this->render('main/admin.html.twig',['formUsers' =>$formUsers->createView()]);
     }
 }
