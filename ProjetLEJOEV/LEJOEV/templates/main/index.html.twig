@@ -11,21 +11,18 @@
                 {% endfor %}
             </select>
             <input class="pe-input" type="submit" value="Analyser" onclick="redirect()">
-            <a href="{{ path('modifieride',{id:utilisateur.id}) }}"><input class="pe-input" value="Admin" ></a>
+        <a href="{{ path('modifieride',{id:utilisateur.id}) }}"><button class="pe-input" value="Admin" >Admin</button></a>
 
 
     </div>
     <div class="container1">
         <div class="banania1">
-            <h2>Score personel</h2>
+            <h2>Score personnel</h2>
             <div class="graph1">
-                <div class="content-wrap">
-                    <div>
-
-                        <div class="progress-bar position text-center" data-percent="48" data-duration="1000" data-color="#6a6f77,#5fb756"><script>$(".progress-bar").loading()</script></div>
-                    </div>
-                </div>
-
+                <select id="getmoyenne" style="display: none;">
+                        <option value="{{ utilisateur.moyenne }}">moyenneuser</option>
+                </select>
+                <canvas height="200" width ="200" id="counter"/>
             </div>
             <p>
             <!-- le nom utilisteur rend 0 avec la BDDNom : {{ utilisateur.nom }} <br>-->
@@ -69,7 +66,10 @@
 
 
             </div>
-            <button type="button" class="btn">Améliorer votre score !</button>
+            <a href="{{ path('questionById',{id:utilisateur.id}) }}">
+                <button type="button" class="btn">Améliorer votre score !</button>
+            </a>
+
         </div>
         <div class="banania3">
             <h2>Classements</h2>
@@ -84,28 +84,7 @@
 
 
             </div>
-            <<!--div class="listecouleur">
-                <div class="listcoulelem">
-                    <div class="coul1"></div>
-                    <p class="textcoul">{{ utilisateur.mental }}</p>
-                </div>
-                <div class="listcoulelem">
-                    <div class="coul2"></div>
-                    <p class="textcoul">{{ utilisateur.savoir }}</p>
-                </div>
-                <div class="listcoulelem">
-                    <div class="coul3"></div>
-                    <p class="textcoul">{{ utilisateur.physique }}</p>
-                </div>
-                <div class="listcoulelem">
-                    <div class="coul4"></div>
-                    <p class="textcoul">{{ utilisateur.Sociabilite }}</p>
-                </div>
-                <div class="listcoulelem">
-                    <div class="coul5"></div>
-                    <p class="textcoul">{{ utilisateur.moyenne}}</p>
-                </div>
-            </div>-->
+
         </div>
 
 

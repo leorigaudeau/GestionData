@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+
+        </div>
+        {% for question in Questions %}
+            <h1 class="questionintitule">{{ question.intitule }} </h1>
+            <div class="contentbtnVF">
+                <a href="">
+                    <button class="Vrai">
+                        Oui !
+                    </button>
+                </a>
+                <a href="">
+                    <button class="Faux">
+                        Non !
+                    </button>
+                </a>
+
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -5,13 +5,14 @@
 {% block body %}
     <div class="globale">
 
-        {{ form_start(formLivreur)}}
+        {{ form_start(formUsers)}}
 
-        {{ form_row(formLivreur.prenom , {'attr':{'placeholder': 'Nom du livreur' }}) }}
+        {{ form_row(formUsers.prenom , {'attr':{'placeholder': 'Nom du livreur' }}) }}
+        {{ form_row(formUsers.age , {'attr':{'placeholder': 'Nom du livreur' }}) }}
 
 
-        <button type="submit" class="btn-success">Modifier un livreur</button>
+        <button type="submit" class="btn-success">Modifier un élève</button>
 
-        {{form_end(formLivreur)}}
+        {{form_end(formUsers)}}
     </div>
 {% endblock %}
