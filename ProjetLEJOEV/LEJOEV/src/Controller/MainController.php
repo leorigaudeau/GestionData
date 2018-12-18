@@ -55,15 +55,14 @@ class MainController extends AbstractController
     public function questionById($id)
 
     {
-        $randNumber = rand(16, 30);
+        $randNumber = rand(106, 120);
         $viewData['Questions'] = $this->questionRepo->findRandom($randNumber);
 
-
-
-
-
         return $this->render('main/questions.html.twig',$viewData);
+
+
     }
+
 
     /**
      * @Route("/administration/modifier/{id}", name="modifieride")
@@ -72,20 +71,27 @@ class MainController extends AbstractController
     public function modifierID(Utilisateurs $id,Request $request,ObjectManager $manager)
 
     {
-        $formUsers = $this ->createFormBuilder($id)
-            ->add('prenom')
-            ->add('age')
-            ->getForm();
+        $user = $this->container->get('security.token_storage')->getToken()->getUser()->getUsername();
+        if ($user=='admin'){
+            $formUsers = $this ->createFormBuilder($id)
+                ->add('prenom')
+                ->add('age')
+                ->getForm();
 
-        $formUsers->handleRequest($request);
+            $formUsers->handleRequest($request);
 
-        if($formUsers->isSubmitted()&& $formUsers->isValid()){
-            $manager->persist($id);
-            $manager->flush();
+            if($formUsers->isSubmitted()&& $formUsers->isValid()){
+                $manager->persist($id);
+                $manager->flush();
 
-            return $this->redirectToRoute('main');
+                return $this->redirectToRoute('main');
+            }
+
+            return $this->render('main/admin.html.twig',['formUsers' =>$formUsers->createView()]);
+        }else{
+            return $this->redirectToRoute('app_login');
         }
 
-        return $this->render('main/admin.html.twig',['formUsers' =>$formUsers->createView()]);
+
     }
 }

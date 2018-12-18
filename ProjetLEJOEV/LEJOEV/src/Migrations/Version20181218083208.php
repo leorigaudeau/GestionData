@@ -8,14 +8,16 @@ use Doctrine\Migrations\AbstractMigration;
 /**
  * Auto-generated Migration: Please modify to your needs!
  */
-final class Version20181212102408 extends AbstractMigration
+final class Version20181218083208 extends AbstractMigration
 {
     public function up(Schema $schema) : void
     {
         // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'sqlite', 'Migration can only be executed safely on \'sqlite\'.');
 
-        $this->addSql('CREATE TABLE utilisateurs (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nom INTEGER NOT NULL, prenom VARCHAR(255) NOT NULL, age INTEGER NOT NULL, mental INTEGER NOT NULL, savoir INTEGER NOT NULL, physique INTEGER NOT NULL, sociabilite INTEGER NOT NULL, moyenne INTEGER NOT NULL, comportement INTEGER NOT NULL)');
+        $this->addSql('CREATE TABLE admin (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, username VARCHAR(180) NOT NULL, roles CLOB NOT NULL --(DC2Type:json)
+        , password VARCHAR(255) NOT NULL)');
+        $this->addSql('CREATE UNIQUE INDEX UNIQ_880E0D76F85E0677 ON admin (username)');
     }
 
     public function down(Schema $schema) : void
@@ -23,6 +25,6 @@ final class Version20181212102408 extends AbstractMigration
         // this down() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'sqlite', 'Migration can only be executed safely on \'sqlite\'.');
 
-        $this->addSql('DROP TABLE utilisateurs');
+        $this->addSql('DROP TABLE admin');
     }
 }
