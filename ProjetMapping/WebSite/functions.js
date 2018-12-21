@@ -7,12 +7,12 @@ var x =document.getElementById("Historique")
 
 for (let index = 0; index < monstorage.length; index++) {
 	const element = monstorage.getItem(index);
-	if (monstorage.getItem(index)==null) {
+	if (element == null) {
 		continue
 	}
-	StringINNER +="<br>Votre Position"+monstorage.getItem("iter")+element;	
-}	
-x.innerHTML= StringINNER;
+	StringINNER +="<br>Votre Position"+index+element;	
+}
+x.innerHTML = StringINNER;
 
 
 // assigning to global variable:
@@ -34,6 +34,7 @@ function getLocation() {
 
 
 function suivre(position) {
+	var StringINNER=""
 	var latitude = position.coords.latitude;
 	var longitude = position.coords.longitude;
 	latlng = new google.maps.LatLng(latitude, longitude);
