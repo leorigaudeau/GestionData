@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+    <div class="globale">
+        <div class="personna">
+            <select class="pe-dropbox" id="select">
+                {% for utilisateur in utilisateurs %}
+                    <option value="{{ utilisateur.id }}">{{ utilisateur.prenom }}</option>
+                {% endfor %}
+            </select>
+            <input class="pe-input" type="submit" value="Analyser" onclick="redirect()">
+            <a href="{{ path('logout') }}">
+                <button class="pe-input" value="Déconnexion">
+                    Deconnexion
+                </button>
+
+            </a>
+        </div>
+        <div >
+            <h1 >
+               ↑ Sélectionner votre profil pour l'analyse
+            </h1>
+        </div>
+        <div class="accueil">
+            <h2>Bienvenue !</h2>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+<div class="globale">
+    <div class="personna">
+            <select class="pe-dropbox" id="select">
+                {% for user in utilisateurs %}
+                    <option value="{{ user.id }}">{{ user.prenom }}</option>
+                {% endfor %}
+            </select>
+            <input class="pe-input" type="submit" value="Analyser" onclick="redirect()">
+        <a href="{{ path('modifieride',{id:utilisateur.id}) }}"><button class="pe-input" value="Admin" >Admin</button></a>
+        <a href="{{ path('logout') }}">
+            <button class="pe-input" value="Déconnexion">
+                Déconnexion
+            </button>
+
+        </a>
+
+    </div>
+    <div class="container1">
+        <div class="banania1">
+            <h2>Score personnel</h2>
+            <div class="graph1">
+                <select id="getmoyenne" style="display: none;">
+                        <option value="{{ utilisateur.moyenne }}">moyenneuser</option>
+                </select>
+                <canvas height="200" width ="200" id="counter"/>
+            </div>
+            <p>
+            <!-- le nom utilisteur rend 0 avec la BDDNom : {{ utilisateur.nom }} <br>-->
+            Prenom : {{ utilisateur.prenom }} <br>
+            Age : {{ utilisateur.age}} ans</p>
+        </div>
+        <div class="banania2">
+            <h2>Détails score</h2>
+            <div class="graph2">
+                <div class="contentbar">
+                    <p class="textBar">Mental</p>
+                    <div class="prgBar" style="height: {{ utilisateur.mental }}%">
+                    </div>
+                    <p class="prcbar">{{ utilisateur.mental }} %</p>
+                </div>
+                <div class="contentbar">
+                    <p class="textBar">Scolaire</p>
+                    <div class="prgBar" style="height: {{ utilisateur.savoir }}%">
+                    </div>
+                    <p class="prcbar">{{ utilisateur.savoir }}%</p>
+                </div>
+                <div class="contentbar">
+                    <p class="textBar">Physique</p>
+                    <div class="prgBar" style="height: {{ utilisateur.physique }}%">
+                    </div>
+                    <p class="prcbar">{{ utilisateur.physique }}%</p>
+                </div>
+                <div class="contentbar">
+                    <p class="textBar">Sociabilité</p>
+                    <div class="prgBar" style="height: {{ utilisateur.Sociabilite }}%">
+                    </div>
+                    <p class="prcbar">{{ utilisateur.Sociabilite }}%</p>
+                </div>
+                <div class="contentbar">
+                    <p class="textBar">Comportement</p>
+                    <div class="prgBar" style="height: {{ utilisateur.comportement }}%">
+                    </div>
+                    <p class="prcbar">{{ utilisateur.comportement }}%</p>
+                </div>
+
+
+
+            </div>
+            <a href="{{ path('questionById',{id:utilisateur.id}) }}">
+                <button type="button" class="btn">Améliorer votre score !</button>
+            </a>
+
+        </div>
+        <div class="banania3">
+            <h2>Classements</h2>
+            <div class="graph3">
+                <ol>
+                    {% for classe in Classement%}
+                        <li>{{ classe.prenom }}</li>
+                    {% endfor %}
+                    <li>...</li>
+
+                </ol>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+{% endblock %}

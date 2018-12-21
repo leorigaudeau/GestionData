@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+
+        <div>
+        {% for question in Questions %}
+            <h1 class="questionintitule">{{ question.intitule }} : {{ question.rapportClass }} </h1>
+            <div class="contentbtnVF">
+                <a href="{{ path('ajout',{idu:CurrentUser.id,idq:question.id}) }}">
+                    <button class="Vrai" onclick="">
+                        Oui !
+                    </button>
+                </a>
+                <a href="{{ path('suppress',{idu:CurrentUser.id,idq:question.id} )}}">
+                    <button class="Faux">
+                        Non !
+                    </button>
+                </a>
+
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
