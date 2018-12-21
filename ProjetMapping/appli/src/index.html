@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Evan RETIERE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="initposition.js"></script>
+	<link rel="stylesheet" href="app.css">
+    
+</head>
+<body>
+<!-- Un élément HTML pour recueillir l’affichage -->
+<div id="maposition"></div>
+
+<!-- Un élément HTML pour recueillir la carte -->
+<div id="map" onload="initCoords()" style="width:100%;height:480px" ></div>
+
+<input type="button" onclick="getLocation();" value="Suivre !">
+
+<!-- Chargement de l'API Google maps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSug2GWFqJ6RImT-6TVzr2nhq_9pdi82Q"></script>
+<script src="app.js"></script>
+
+</body>
+
+</html>
