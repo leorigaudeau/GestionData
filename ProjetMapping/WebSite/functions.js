@@ -2,9 +2,17 @@ var marker;
 var map;      // global variable
 var latlng = new google.maps.LatLng(39.305, -76.617);
 var monstorage = localStorage;
-var iter = 0;
 var StringINNER=""
 var x =document.getElementById("Historique")
+
+for (let index = 0; index < monstorage.length; index++) {
+	const element = monstorage.getItem(index);
+	if (monstorage.getItem(index)==null) {
+		continue
+	}
+	StringINNER +="<br>Votre Position"+monstorage.getItem("iter")+element;	
+}	
+x.innerHTML= StringINNER;
 
 
 // assigning to global variable:
@@ -38,10 +46,13 @@ function suivre(position) {
 	monstorage.setItem(monstorage.getItem("iter"),latlng);
 	for (let index = 0; index < monstorage.length; index++) {
 		const element = monstorage.getItem(index);
-		StringINNER +="Votre Position"+element;	
+		if (element == null) {
+			continue
+		}
+		StringINNER +="<br>Votre Position"+index+element;	
 	}
 	x.innerHTML= StringINNER;
-	newiter=monstorage.getItem("iter")+1;
+	newiter=parseInt(monstorage.getItem("iter"))+1;
 	monstorage.setItem("iter",newiter);
 	console.log(monstorage.getItem("iter"))
 };
